@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productslist>
+<product>
+  <heading>Chocolate</heading>
+  <price>10.00</price>
+ </product>
+ <product>
+  <heading>Potato Chips</heading>
+  <price>3.00</price>
+ </product>
+ <product>
+  <heading>Bread</heading>
+  <price>7.00</price>
+ </product>
+ </productslist>

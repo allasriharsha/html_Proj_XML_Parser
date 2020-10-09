@@ -1,0 +1,58 @@
+<html>
+<head>
+
+
+    
+    
+</head>
+<body style="margin:0PX">
+<div style="background-color:#000000; color:#ffffff; " >
+<h1 style="padding:5px">CLOTHING STORE</h1>
+</div>
+
+    <div id="prodlist">
+        <p id="demo"></p>
+    </div>
+    <div id="tempDiv"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+/*var client = new XMLHttpRequest();
+client.open('GET', 'https://drive.google.com/file/d/15bvIoiMYEI08ci5og6m7pUh8fz5eAb80/view?usp=sharing');
+    
+client.onreadystatechange = function() {
+   var response = client.responseText,
+       parser = new DOMParser(),
+       xmlDoc = parser.parseFromString(response,"text/xml");
+    alert(response);
+    
+   //use the xml Doc however you want.
+}
+client.send(); */
+    
+    $.ajax({
+    url: 'note.xml',         
+   type: 'POST',
+   crossDomain: true,
+   dataType: 'xml',
+   success: function(jsondata){
+console.log(jsondata);
+   }
+})
+         /*   $("#tempDiv").load("productlist.xml", function (response, status, xhr) {
+                if (status != "error") {
+                    /*Hiding the loading image
+                    $("#loadingImg").hide();
+                    /*End
+  
+                    console.log(DisplayXML(1));
+                }
+            });
+  
+            /*Showing the loading image
+            $("#loadingImg").show();
+            /*End*/
+  
+ 
+    </script>
+</body>
+</html>
